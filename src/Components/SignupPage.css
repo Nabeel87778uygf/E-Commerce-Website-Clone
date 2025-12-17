@@ -1,0 +1,249 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.signup-page-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+/* Left side image */
+.signup-image-container {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.signup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Right side content */
+.signup-content-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.signup-form-container {
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.signup-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.signup-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    margin-right:40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4285f4;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #3367d6;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider-text {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.google-button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.google-button:hover {
+    background-color: #f5f5f5;
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .signup-content-container {
+        padding: 30px 15px;
+    }
+
+    .signup-form-container {
+        width: 90%;
+    }
+
+    .signup-page-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Medium Devices (Tablets / Large Phones) */
+@media (max-width: 768px) {
+    .signup-page-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .signup-image-container {
+        width: 100%;
+        height: 220px;
+        position: relative;
+    }
+
+    .signup-image {
+        position: relative;
+    }
+
+    .signup-content-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .signup-form-container {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+    .signup-card {
+        padding: 25px 20px;
+    }
+
+    .signup-title {
+        font-size: 22px;
+    }
+
+    .signup-subtitle {
+        font-size: 13px;
+    }
+
+    .form-input {
+        padding: 10px 12px;
+    }
+
+    .signup-button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .google-button {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .google-logo {
+        width: 18px;
+        height: 18px;
+    }
+}

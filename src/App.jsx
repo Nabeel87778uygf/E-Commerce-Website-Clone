@@ -24,6 +24,7 @@ function App() {
             <CategoriesCard />
             <LastIconSection />
             {/* <SignupPage /> */}
+            {/* <SignupPage /> */} 
             {/* if you want to show anything on the homepage they will show on homepage */}
           </>
         } />
